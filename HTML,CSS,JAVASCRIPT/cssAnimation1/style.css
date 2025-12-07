@@ -1,0 +1,24 @@
+.demo{
+    height:250px;
+    width:250px;
+    margin-top:50px;
+    background-color: green;
+    animation-name: CSERocks;
+    animation-duration: 5s;
+    border-radius: 50px;
+    position:relative;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes CSERocks{
+    from{
+        left:50px;
+        transform:rotate(60deg);
+    }
+    To{
+        left:600px;
+        transform: rotate(630deg);
+        background-color: blueviolet;
+    }
+}
