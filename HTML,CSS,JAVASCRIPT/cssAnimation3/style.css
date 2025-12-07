@@ -1,0 +1,18 @@
+.box{
+    margin-left:100px;
+    margin-top:50px;
+    height: 150px;
+    width: 150px;
+    animation-name: rocks;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rocks{
+    0%{
+    background-color: aquamarine;
+    }
+    100%{
+        background-color: navy;
+    }
+}
