@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <form>
+            <input type="text" id="Red">
+            <input type="text" id="Green">
+            <input type="text" id="Blue">
+            <br>
+            <br>
+            <input type="button" onclick="CSERocks()" value="Play Game">
+            <div id="d1" style="height:200px; width:200px; background-color: aqua;">
+            </div>
+        </form>
+        <script>
+            function CSERocks() {
+                var r = document.getElementById("Red").value;
+                var g = document.getElementById("Green").value;
+                var b = document.getElementById("Blue").value;
+                var red = parseInt(r);
+                var green = parseInt(g);
+                var blue = parseInt(b);
+                var d = document.getElementById("d1");
+                d.style.backgroundColor = 'rgb(' + red + ',' + green + ',' + blue + ')';
+            }
+        </script>
+    </center>
+</body>
+
+</html>

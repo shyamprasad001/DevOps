@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function radioCheck() {
+            var r = document.f1.college;
+            for (i = 0; i < r.length; i++) {
+                if (r[i].checked == true) {
+                    alert("Selected college is ->" + r[i].value);
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form name="f1">
+        <input type="radio" name="college" value="Aditya University">AUS
+        <input type="radio" name="college" value="ACET">ACET
+        <input type="radio" name="college" value="Pragati">PEC
+        <input type="radio" name="college" value="Godavari">GIET
+        <input type="submit" value="submit" onclick="radioCheck()">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <select id="cseSelect">
+            <option value="Devops">Devops</option>
+            <option value="CC">CC</option>
+            <option value="CD">CD</option>
+        </select>
+        <input type="text" id="tf1">
+        <button type="button" value="Rocks" onclick="AddSubject()">Rocks</button>
+    </form>
+    <script>
+        function AddSubject() {
+            var t = document.getElementById("tf1");
+            var x = document.getElementById("cseSelect");
+            var option = new Option(t.value);
+            x.appendChild(option);
+        }
+    </script>
+</body>
+
+</html>

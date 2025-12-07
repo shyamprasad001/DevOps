@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function cbkCheck() {
+            var str = "SKILLS = ";
+            if (document.forms[0].cbk1.checked) {
+                str = str + " " + document.forms[0].cbk1.value;
+            } if (document.forms[0].cbk2.checked) {
+                str = str + " " + document.forms[0].cbk2.value;
+            } if (document.forms[0].cbk3.checked) {
+                str = str + " " + document.forms[0].cbk3.value;
+            } if (document.forms[0].cbk4.checked) {
+                str = str + " " + document.forms[0].cbk4.value;
+            } if (document.forms[0].cbk5.checked) {
+                str = str + " " + document.forms[0].cbk5.value;
+            }
+            alert(str);
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <input type="checkbox" name="cbk1" value="Java">Java
+        <input type="checkbox" name="cbk2" value="Python">Python
+        <input type="checkbox" name="cbk3" value="Flutter">Flutter
+        <input type="checkbox" name="cbk4" value="Devops">Devops
+        <input type="checkbox" name="cbk5" value="Data Analytics">Data Analytics
+        <input type="button" value="Submit" onclick="cbkCheck()">
+    </form>
+</body>
+
+</html>
