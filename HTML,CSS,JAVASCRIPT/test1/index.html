@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+</head>
+
+<body onload="displayClock()">
+    <center>
+        <font size=20 face="Mistral">
+            <h1 id="digitalClock"></h1>
+            <p id="caption">by 23MH1A05I8</p>
+        </font>
+    </center>
+    <script>
+        function displayClock() {
+            let digitalClock = document.getElementById('digitalClock');
+            let caption = document.getElementById('caption');
+
+            var time = new Date();
+            var hours = time.getHours();
+            var minutes = time.getMinutes();
+            var seconds = time.getSeconds();
+
+            digitalClock.innerHTML = hours + ":" + minutes + ":" + seconds;
+
+            let r = Math.round(Math.random() * 255);
+            let g = Math.round(Math.random() * 255);
+            let b = Math.round(Math.random() * 255);
+
+            caption.style.color = 'rgb(' + r + ',' + g + ',' + b + ')';
+            digitalClock.style.color = 'rgb(' + r + ',' + g + ',' + b + ')';
+
+            setTimeout("displayClock()", 1000);
+        }
+        displayClock();
+    </script>
+</body>
+
+</html>
