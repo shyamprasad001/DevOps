@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <form name="cseClock">
+            <input type="text" size="20" name="clock">
+        </form>
+    </center>
+
+    <script language="javascript" type="text/JavaScript">
+        function show() {
+            var Digital = new Date();
+            var hours = Digital.getHours();
+            var minutes = Digital.getMinutes();
+            var seconds = Digital.getSeconds();
+
+            document.cseClock.clock.value = hours + ":" + minutes + ":" + seconds;
+
+            setTimeout("show()", 1000);
+        }
+        show();
+    </script>
+</body>
+
+</html>

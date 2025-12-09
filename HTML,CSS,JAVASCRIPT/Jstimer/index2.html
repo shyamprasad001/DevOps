@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="disp()"> 
+    <!-- onload method used to call the disp() menthod when the page reloaded -->
+    <center>
+        <font size=30 face="Mistral">
+            <h1 id="f1">DURGA PRASAD</h1>
+        </font>
+    </center>
+    <script type="text/javascript">
+        function disp() {
+            var r = Math.round(Math.random() * 255);
+            var g = Math.round(Math.random() * 255);
+            var b = Math.round(Math.random() * 255);
+
+            var h = document.getElementById('f1');
+            h.style.color = 'rgb(' + r + ',' + g + ',' + b + ')';
+            setTimeout("disp()", 1000);
+        }
+    </script>
+</body>
+
+</html>
