@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style >
+        body{
+            background-color: black;
+            text-align: center;
+        }
+        h1{
+            font-size: 100px;
+            font-family: Gabriola;
+            color: white;
+            padding: 300px;
+            animation-name: cseGlow;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes cseGlow {
+            from{
+                text-shadow: 5px 5px 10px red, 5px 5px 20px red, 5px 5px 30px red, 5px 5px 40px red;
+            }
+
+            to{
+                text-shadow: 0px 0px 10px blue, 0px 0px 20px blue, 0px 0px 30px blue, 0px 0px 40px blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 >WELCOME TO CSE</h1>
+</body>
+</html>
