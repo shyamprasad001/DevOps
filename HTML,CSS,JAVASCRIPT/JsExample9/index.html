@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function cseRocks() {
+            var i = document.getElementById("tf1").value;
+            let p = fetch(`https://restcountries.com/v3.1/name/${i}?fullText=true`);
+            var f = document.getElementById('flag');
+            p.then(x => x.json()).then(data => data[0].flags)
+                .then(k => f.src = k.png);
+            }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="tf1">
+    <input type="button" value="Click Me" onclick="cseRocks()">
+    <img id="flag" height="200" width="200">
+</body>
+
+</html>
