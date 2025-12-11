@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function cseFetch() {
+            // const fileUrl = "cse1.txt";
+            // let p = fetch(fileUrl);
+            // console.log(p);
+            // p.then(c => c.text()).then(data => console.log(data));
+
+            var p = fetch(`https://jsonplaceholder.typicode.com/users`);
+            p.then(x => { return x.json() }).then(y => { console.log(y); console.log(y[2].email) });
+
+        }
+        cseFetch();
+    </script>
+</body>
+
+</html>
