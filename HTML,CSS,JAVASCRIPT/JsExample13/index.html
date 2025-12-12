@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="">
+        async function cseTemp() {
+            const fileUrl = `https://api.openweathermap.org/data/2.5/weather?q=hyderabad&appid=a5896e7046e4edf8c80b4adf5e4e2a51&units=metric`;
+
+            fetch(fileUrl).then(c => c.json()).then(t => console.log(t));
+        }
+
+        cseTemp();
+    </script>
+</body>
+
+</html>
