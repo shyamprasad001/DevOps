@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form name="f1">
+        <input type="text" id="name">
+        <input type="text" id="city">
+
+        <input type="button" value="CLICKME" onclick="disp()">
+
+        <br><br>
+
+        <table id="csetb1" border="1">
+            <th>
+                NAME
+            </th>
+            <th>
+                CITY
+            </th>
+
+            <tbody>
+
+            </tbody>
+        </table>
+    </form>
+
+    <script>
+        function disp() {
+            var n = document.getElementById("name").value;
+            var c = document.getElementById("city").value;
+
+            var tr = document.createElement("tr");
+
+
+            var td1 = tr.appendChild(document.createElement('td'));
+            var td2 = tr.appendChild(document.createElement('td'));
+
+            td1.innerHTML = n;
+            td2.innerHTML = c;
+
+            document.getElementById('csetb1').appendChild(tr);
+            document.getElementById("name").value = " ";
+            document.getElementById("city").value = " ";
+        }
+    </script>
+</body>
+
+</html>
