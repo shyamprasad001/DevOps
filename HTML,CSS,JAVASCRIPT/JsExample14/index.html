@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <table id="jsondata" border="1">
+            <th>
+                NAME
+            </th>
+            <th>
+                MOBILE
+            </th>
+            <th>
+                CITY
+            </th>
+            <th>
+                EMAIL
+            </th>
+
+            <tbody>
+
+            </tbody>
+        </table>
+    </center>
+    <script>
+        const csejson = [
+            {
+                "name": "Durga Prasad",
+                "mobile": "12345",
+                "city": "RJY",
+                "email": "dp@gmail.com"
+            },
+
+            {
+                "name": "Shyam Prasad",
+                "mobile": "98765",
+                "city": "VIZ",
+                "email": "sp@gmail.com"
+            },
+
+            {
+                "name": "Radha",
+                "mobile": "56473",
+                "city": "KKD",
+                "email": "rk@gmail.com"
+            },
+
+            {
+                "name": "Ram",
+                "mobile": "2345",
+                "city": "RJY",
+                "email": "rm@gmail.com"
+            }
+        ];
+
+        const tablebody = document.querySelector("#jsondata tbody");
+        csejson.forEach(students => {
+            const row = document.createElement("tr");
+            const nametd = document.createElement("td");
+            nametd.textContent = students.name;
+            row.appendChild(nametd);
+
+            const mobiletd = document.createElement("td");
+            mobiletd.textContent = students.mobile;
+            row.appendChild(mobiletd);
+
+            const cityyd = document.createElement("td");
+            cityyd.textContent = students.city;
+            row.appendChild(cityyd);
+
+            const emailtd = document.createElement("td");
+            emailtd.textContent = students.email;
+            row.appendChild(emailtd);
+
+            tablebody.appendChild(row);
+        });
+    </script>
+</body>
+
+</html>
