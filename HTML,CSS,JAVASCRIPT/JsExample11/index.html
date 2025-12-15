@@ -10,7 +10,7 @@
 <body>
     <script type="text/javascript">
         async function disp() {
-            const fileUrl = `https://api.weatherstack.com/current?access_key=6536b2738765eccb4785eb8a627b41bb&query=chennai`;
+            const fileUrl = `https://api.weatherstack.com/current?access_key=87b22d7bec1a341a18e0f0fbf431cfdf&query=chennai`;
 
             fetch(fileUrl).then(c => c.json()).then(t => console.log(t.current.temperature));
         }
