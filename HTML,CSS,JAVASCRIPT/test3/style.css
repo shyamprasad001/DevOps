@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+.clock-container {
+  display: flex;
+  flex-direction: column;
+  background-color: bisque;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+#year {
+  font-size: 50px;
+  font-weight: 1000;
+  font-family: "Arial Narrow";
+}
+
+.time-boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.time-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: brown;
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+  border-radius: 14px;
+  color: antiquewhite;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.date {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  color: brown;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
