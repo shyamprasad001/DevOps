@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aditya University</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 class="glow">Aditya University</h1>
+
+    <div class="container">
+
+        <!-- FORM -->
+        <form id="regForm" class="form">
+            <h2>Registration Form</h2>
+
+            <label>Name</label>
+            <input type="text" id="name" required>
+
+            <label>Address</label>
+            <textarea id="address" rows="3"></textarea>
+
+            <label>Gender</label>
+            <div class="inline">
+                <label><input type="radio" name="gender" value="Male" required> Male</label>
+                <label><input type="radio" name="gender" value="Female"> Female</label>
+            </div>
+
+            <label>College</label>
+            <select id="college">
+                <option>Aditya University</option>
+                <option>JNTU</option>
+                <option>Osmania</option>
+            </select>
+
+            <label>Skills</label>
+            <div class="inline skills">
+                <label><input type="checkbox" value="C"> C</label>
+                <label><input type="checkbox" value="C++"> C++</label>
+                <label><input type="checkbox" value="Python"> Python</label>
+                <label><input type="checkbox" value="MERN"> MERN</label>
+                <label><input type="checkbox" value="DevOps"> DevOps</label>
+            </div>
+
+            <label>Date of Birth</label>
+            <input type="date" id="dob">
+
+            <label>Photo</label>
+            <input type="file" id="photo" accept="image/*">
+
+            <div class="buttons">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+
+        <!-- OUTPUT CARD -->
+        <div class="card" id="card">
+            <div class="avatar">
+                <img id="outImg">
+            </div>
+
+            <p><b>Name:</b> <span id="oName"></span></p>
+            <p><b>Address:</b> <span id="oAddress"></span></p>
+            <p><b>Gender:</b> <span id="oGender"></span></p>
+            <p><b>College:</b> <span id="oCollege"></span></p>
+            <p><b>Skills:</b> <span id="oSkills"></span></p>
+            <p><b>DOB:</b> <span id="oDob"></span></p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html> 
