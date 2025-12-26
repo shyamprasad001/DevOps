@@ -1,0 +1,20 @@
+[
+    {
+        "id": 501,
+        "name": "Alice Johnson",
+        "age": 20,
+        "branch": "Computer Science"
+    },
+    {
+        "id": 502,
+        "name": "Bob Smith",
+        "age": 22,
+        "branch": "Mathematics"
+    },
+    {
+        "id": 503,
+        "name": "Charlie Brown",
+        "age": 21,
+        "branch": "Physics"
+    }
+]
