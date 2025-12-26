@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="dashboard">
+        <img id="dashPhoto" alt="Student Photo" />
+        <div class="details" id="output"></div>
+    </div>
+
+    <script>
+        const data = JSON.parse(localStorage.getItem("formData"));
+
+        if (!data) {
+            document.body.innerHTML =
+                "<h2 style='text-align:center'>No Data Found</h2>";
+        } else {
+            document.getElementById("dashPhoto").src = data.photo;
+
+            document.getElementById("output").innerHTML = `
+        <h2>${data.name}</h2>
+        <p><b>Address:</b> ${data.address}</p>
+        <p><b>Gender:</b> ${data.gender}</p>
+        <p><b>College:</b> ${data.college}</p>
+        <p><b>Skills:</b> ${data.skills.join(", ")}</p>
+        <p><b>Date of Birth:</b> ${data.dob}</p>
+      `;
+        }
+    </script>
+
+</body>
+
+</html>

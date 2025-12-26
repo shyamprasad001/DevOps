@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: linear-gradient(135deg, #020617, #020617);
+  min-height: 100vh;
+  color: #e5e7eb;
+  margin: 0;
+}
+
+/* Title */
+.glow {
+  text-align: center;
+  margin: 30px 0 10px;
+  font-size: 42px;
+  font-weight: 700;
+  color: #22c55e;
+  text-shadow: 0 0 10px #22c55e, 0 0 20px #22c55e, 0 0 30px #22c55e;
+}
+
+/* Card */
+.form-container,
+.dashboard {
+  width: 420px;
+  max-width: 90%;
+  margin: 30px auto;
+  padding: 24px;
+  background: rgba(15, 23, 42, 0.9);
+  border-radius: 14px;
+  box-shadow: 0 0 20px rgba(34, 197, 94, 0.5), 0 0 40px rgba(34, 197, 94, 0.3),
+    0 0 60px rgba(34, 197, 94, 0.1);
+}
+
+/* Headings */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+  font-size: 14px;
+  margin-top: 14px;
+  display: block;
+  color: #cbd5f5;
+}
+
+/* Inputs */
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid #1e293b;
+  background: #020617;
+  color: #f8fafc;
+  transition: box-shadow 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #22c55e;
+  box-shadow: 0 0 10px rgba(34, 197, 94, 0.5), 0 0 20px rgba(34, 197, 94, 0.3);
+}
+
+/* Inline */
+.inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+/* Buttons */
+.btns {
+  display: flex;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+button[type="submit"] {
+  background: #22c55e;
+  color: #020617;
+}
+
+button[type="submit"]:hover {
+  box-shadow: 0 0 15px rgba(34, 197, 94, 0.8), 0 0 30px rgba(34, 197, 94, 0.5);
+  transform: translateY(-2px);
+}
+
+button[type="reset"] {
+  background: #1e293b;
+  color: #f8fafc;
+}
+
+button[type="reset"]:hover {
+  box-shadow: 0 0 15px rgba(30, 41, 59, 0.8), 0 0 30px rgba(30, 41, 59, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Dashboard */
+.dashboard {
+  text-align: center;
+}
+
+.dashboard img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #22c55e;
+}
+
+.details {
+  margin-top: 15px;
+  text-align: left;
+  text-align: center;
+}
+
+.details p {
+  margin: 8px 0;
+}
+
+.details b {
+  color: #22c55e;
+}

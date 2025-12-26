@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Registration | Aditya University</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+
+<body>
+
+    <h1 class="glow">Aditya University</h1>
+
+    <div class="form-container">
+        <h2>Student Registration</h2>
+
+        <form id="regForm">
+
+            <label>Name</label>
+            <input type="text" id="name" required />
+
+            <label>Address</label>
+            <textarea id="address" rows="3" required></textarea>
+
+            <label>Gender</label>
+            <div class="inline">
+                <label><input type="radio" name="gender" value="Male" required /> Male</label>
+                <label><input type="radio" name="gender" value="Female" /> Female</label>
+            </div>
+
+            <label>College</label>
+            <select id="college">
+                <option>Aditya University</option>
+                <option>JNTU</option>
+                <option>Osmania University</option>
+            </select>
+
+            <label>Skills</label>
+            <div class="inline">
+                <label><input type="checkbox" value="C" /> C</label>
+                <label><input type="checkbox" value="C++" /> C++</label>
+                <label><input type="checkbox" value="Python" /> Python</label>
+                <label><input type="checkbox" value="MERN" /> MERN</label>
+                <label><input type="checkbox" value="DevOps" /> DevOps</label>
+            </div>
+
+            <label>Date of Birth</label>
+            <input type="text" id="dob" required />
+
+            <label>Upload Photo</label>
+            <input type="file" id="photo" accept="image/*" required />
+
+            <div class="btns">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        flatpickr("#dob", {
+            dateFormat: "Y-m-d",
+            minDate: "1900-01-01",
+            maxDate: "2010-12-31"
+        });
+    </script>
+</body>
+
+</html>
