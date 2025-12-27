@@ -1,0 +1,82 @@
+[
+  {
+    "id": 501,
+    "name": "Shyam",
+    "age": 20,
+    "branch": "Computer Science",
+    "city": "VIZ",
+    "email": "shyam123@gmail.com"
+  },
+  {
+    "id": 502,
+    "name": "Ravi",
+    "age": 21,
+    "branch": "Information Technology",
+    "city": "KKD",
+    "email": "ravi456@gmail.com"
+  },
+  {
+    "id": 503,
+    "name": "Sita",
+    "age": 19,
+    "branch": "Electronics",
+    "city": "Hyd",
+    "email": "sita789@gmail.com"
+  },
+  {
+    "id": 504,
+    "name": "Gita",
+    "age": 22,
+    "branch": "Mechanical",
+    "city": "Bng",
+    "email": "gita123@gmail.com"
+  },
+  {
+    "id": 505,
+    "name": "Ramesh",
+    "age": 20,
+    "branch": "Civil",
+    "city": "Rjy",
+    "email": "ramesh456@gmail.com"
+  },
+  {
+    "id": 506,
+    "name": "Anita",
+    "age": 21,
+    "branch": "Chemical",
+    "city": "Vij",
+    "email": "anita123@gmail.com"
+  },
+  {
+    "id": 507,
+    "name": "Vikram",
+    "age": 22,
+    "branch": "Aerospace",
+    "city": "KKD",
+    "email": "vikram456@gmail.com"
+  },
+  {
+    "id": 508,
+    "name": "Laxmi",
+    "age": 19,
+    "branch": "Biotechnology",
+    "city": "Hyd",
+    "email": "laxmi789@gmail.com"
+  },
+  {
+    "id": 509,
+    "name": "Manoj",
+    "age": 20,
+    "branch": "Environmental",
+    "city": "Bng",
+    "email": "manoj123@gmail.com"
+  },
+  {
+    "id": 510,
+    "name": "Suresh",
+    "age": 21,
+    "branch": "Industrial",
+    "city": "Rjy",
+    "email": "suresh456@gmail.com"
+  }
+]
