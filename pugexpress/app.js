@@ -24,11 +24,12 @@ let marksSchema = new mongoose.Schema(
     branch: String,
     college: String,
     marks: Number,
+    grade: String,
   },
   { versionKey: false }
 );
 
-let marksmodel = new mongoose.model("markscse", marksSchema, "devopsmarks");
+let marksmodel = new mongoose.model("gradescse", marksSchema, "devopsgrades");
 app.post("/data", (req, res) => {
   let data = {
     _id: req.body._id,
@@ -36,6 +37,7 @@ app.post("/data", (req, res) => {
     branch: req.body.branch,
     college: req.body.college,
     marks: req.body.marks,
+    grade: req.body.grade,
   };
 
   const m = new marksmodel(data);
@@ -49,6 +51,16 @@ app.get("/pugdisplay", (req, res) => {
 
 app.get("/pugdisplay/sort", (req, res) => {
   let b = marksmodel.find().sort({ marks: -1 }).limit(2);
+  b.then((data) => res.render("sample.pug", { data }));
+});
+
+app.get("/pugdisplay/marks", (req, res) => {
+  let b = marksmodel.find().sort({ marks: -1 }).limit(5);
+  b.then((data) => res.render("sample.pug", { data }));
+});
+
+app.get("/pugdisplay/grades", (req, res) => {
+  let b = marksmodel.find().sort({ grade: 1 }).limit(5);
   b.then((data) => res.render("sample.pug", { data }));
 });
 
