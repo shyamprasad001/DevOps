@@ -1,10 +1,35 @@
 html
   head
+    style.
+      body{
+        background-color:cyan;
+      }
+      table,tr,th,td{
+        border:1px solid blue;
+        border-radius:5px;
+        text-align:center;
+        margin:auto
+      }
+      h1,h2{
+        color:red;
+        text-align:center;
+        font-family:JokerMan
+      }
   body
-    table(border="1")
-        each e in data
-          tr
-            td= e._id
-            td= e.name
-            td= e.branch
-            td= e.marks
+    h1="ADITYA UNIVERSITY"
+    h2="DEPARTMENT OF CSE"
+    hr
+    table
+      tr
+        th ID 
+        th NAME 
+        th BRANCH 
+        th COLLEGE 
+        th MARKS
+        each i in data
+          tr 
+            td=i._id
+            td=i.name 
+            td=i.branch 
+            td=i.college
+            td=i.marks
