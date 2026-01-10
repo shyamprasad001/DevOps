@@ -1,11 +1,11 @@
-const express = require("express");
-const mongoose = require("mongoose");
+const express = require("express"); //inporting express module
+const mongoose = require("mongoose"); //importing mongoose module
 
-const pug = require("pug");
-const path = require("path");
+const pug = require("pug"); //importing pug
+const path = require("path"); //importing path module
 
-const app = express();
-app.use(express.json());
+const app = express(); 
+app.use(express.json()); //working to json data
 
 app.set("views", path.join(__dirname, "views")); 
 app.set("view engine", pug);
