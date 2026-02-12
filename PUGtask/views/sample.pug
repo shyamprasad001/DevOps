@@ -1,0 +1,35 @@
+html 
+  head 
+    style. 
+      body{
+        background-color: whitesmoke;
+      }
+      table,tr,th,td{
+        border: 1px solid blue;
+        border-radius: 5px;
+        text-align: center;
+        margin: auto
+      }
+      h1,h2{
+        color:red;
+        text-align:center;
+        font-family: JokerMan
+      }
+  body 
+    h1="ADITYA UNIVERSITY"
+    h2="DEPARTMENT OF CSE"
+    hr
+    table 
+      tr 
+        th ID 
+        th NAME 
+        th BRANCH 
+        th CITY 
+        th SKILLSET
+        each i in data
+          tr 
+            td=i._id
+            td=i.name 
+            td=i.branch 
+            td=i.city 
+            td=i.skills 
